@@ -1,7 +1,7 @@
 FROM debian:9
 
 RUN apt-get update && \
-    apt-get install -y --force-yes --no-install-recommends libpcre3 zlib1g git python3 sudo \
+    apt-get install -y --force-yes --no-install-recommends libpcre3 zlib1g git python sudo \
       automake autoconf libtool build-essential wget ca-certificates unzip libpcre3-dev zlib1g-dev && \
     mkdir -p /data/install && \
     cd /data/install && \

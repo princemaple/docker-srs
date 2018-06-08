@@ -6,7 +6,7 @@ RUN apt-get update && \
     mkdir -p /data/install && \
     cd /data/install && \
     git clone https://github.com/ossrs/srs && cd srs/trunk && \
-    ./configure && make && \
+    ./configure --with-ffmpeg && make && \
     apt-get remove -y --purge --auto-remove automake autoconf libtool build-essential wget ca-certificates unzip libpcre3-dev zlib1g-dev && \
     rm -rf /var/lib/apt/lists/*
     
